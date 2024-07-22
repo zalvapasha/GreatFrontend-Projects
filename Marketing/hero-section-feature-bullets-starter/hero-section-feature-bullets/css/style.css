@@ -1,0 +1,106 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.point {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.point img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  width: 1300px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.hero-section-info {
+  grid-column: 1 / 6;
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+img {
+  grid-column: 6/13;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.hero-list {
+  font-size: 20px;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: rgb(82 82 82);
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    align-items: flex-start;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 36px;
+  }
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
